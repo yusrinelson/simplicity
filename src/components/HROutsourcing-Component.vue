@@ -1,3 +1,22 @@
+<script setup>
+import Carousel from '../components/miniComponents/Benefits-Carousel.vue'
+
+// Scroll to section function
+const scrollToSection = (sectionId) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    const offset = 100; // Offset for your fixed navbar
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
+};
+</script>
+
 <template>
   <div class="body bg-gradient-to-b from-[var(--background)] to-white">
     <div class="flex items-center flex-col">
@@ -11,7 +30,7 @@
           <h1 class="text-3xl font-semibold text-secondary">What are</h1>
           <h1 class="text-4xl font-semibold text-secondary">RETAINERS ?</h1>
           <p class="pt-4 pb-6 max-w-[600px]">These are upfront payment fees to secure services over long term. Fees are deducted monthly from the retainer so clients do not need to make monthly payments.</p>
-          <span class="btn bg-secondary">Message Us</span>
+          <span class="btn bg-secondary" @click="scrollToSection('contact')">Message Us</span>
           </div>
         </div>
         <div class="flex flex-col items-center justify-center mt-10">
@@ -23,8 +42,5 @@
   </div>
 </template>
 
-<script setup>
-import Carousel from '../components/miniComponents/Benefits-Carousel.vue'
-</script>
 
 <style lang="scss" scoped></style>
