@@ -71,9 +71,9 @@ const services = [
       </p>
     </div>
     <div class="w-fit mx-auto">
-      <div class="flex flex-wrap items-center justify-center gap-4 mb-4 mt-10">
+      <div class="flex flex-wrap items-center justify-center gap-4 2xl:gap-8 mb-4 mt-10">
         <div
-          class="service-card bg-gray-100 p-6 w-[240px] h-[330px] rounded-md shadow-md relative overflow-hidden transition-all duration-300 hover:shadow-xl cursor-pointer group"
+          class="service-card bg-gray-100 p-6  sm:w-[240px] h-[330px] rounded-md shadow-md relative overflow-hidden transition-all duration-300 hover:shadow-xl cursor-pointer group"
           v-for="item in services"
           :key="item.title"
         >
@@ -81,9 +81,9 @@ const services = [
           <div class="default-content transition-opacity duration-300 group-hover:opacity-0">
             <div class="icon-wrapper mb-4 flex items-center flex-col">
               <span class="text-4xl"><Component :is="item.icon" class="w-8 h-8 text-green-500" /></span>
-            <h1 class="text-xl font-bold text-secondary text-center">{{ item.title }}</h1>
+            <h1 class="text-lg md:text-xl font-bold text-secondary text-center">{{ item.title }}</h1>
             </div>
-            <p class="text-sm text-gray-600 leading-relaxed text-center">
+            <p class="text-sm md:text-[1rem] text-gray-600 leading-relaxed text-center">
               {{ item.description }}
             </p>
             <p class="text-xs text-center mt-4 text-gray-400 italic">Hover to see details</p>
@@ -102,7 +102,7 @@ const services = [
                 class="flex items-start text-sm"
               >
                 <span class="mr-2 text-yellow-400 flex-shrink-0">✓</span>
-                <span>{{ listItem }}</span>
+                <span class="text-md">{{ listItem }}</span>
               </li>
             </ul>
           </div>

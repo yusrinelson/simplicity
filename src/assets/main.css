@@ -20,15 +20,19 @@ html {
 }
 
 .body{
-    @apply p-10
+    @apply p-4 md:p-10 
 }
 
 /* Global button class */
 
 .btn {
-  @apply text-white px-4 py-2 rounded-[50px] shadow-black shadow-sm font-semibold mr-4 cursor-pointer;
+  @apply text-white text-sm md:text-lg px-4 py-2 rounded-[50px] shadow-black shadow-sm font-semibold mr-4 cursor-pointer;
 }
 
 .heading{
-    @apply text-3xl font-bold text-primary
+    @apply text-xl md:text-3xl font-bold text-primary;
+}
+
+.subheading{
+  @apply text-center text-sm md:text-[1rem]  text-secondary;
 }

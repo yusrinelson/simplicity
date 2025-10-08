@@ -47,7 +47,7 @@ const config = {
 </script>
 
 <template>
-  <div class="w-[350px] max-w-4xl mx-auto">
+  <div class="w-[90vw] md:w-[350px] max-w-4xl mx-auto">
     <Carousel v-bind="config">
       <Slide  v-for="(item, index) in items" :key="index">
         <div class="flex flex-col items-center justify-center w-[350px] h-[200px] bg-primary text-white border border-secondary rounded-lg p-6 text-center shadow-lg">
