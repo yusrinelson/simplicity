@@ -23,16 +23,16 @@ import { Icon } from "@iconify/vue";
         <li class="flex items-start gap-3">
           <EnvelopeIcon class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
           <a
-            href="mailto:simplicityhroutscourcing@gmail.com"
+            href="mailto:simplicityhroutsourcing@gmail.com"
             class="text-gray-800 hover:text-secondary transition-colors break-all"
           >
-            simplicityhroutscourcing@gmail.com
+            simplicityhroutsourcing@gmail.com
           </a>
         </li>
         <li class="flex items-start gap-3">
           <PhoneIcon class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
           <a href="tel:+27674622624" class="text-gray-800 hover:text-secondary transition-colors">
-            +27 067 462 2624
+            +27 67 462 2624
           </a>
         </li>
         <li class="flex items-start gap-3">
@@ -44,7 +44,7 @@ import { Icon } from "@iconify/vue";
     <div class="flex flex-col items-center">
       <h4 class="font-semibold text-primary mb-4">Follow Us</h4>
       <ul class="flex flex-row gap-4">
-        <a
+        <!-- <a
           href="https://facebook.com/simplicityhr"
           target="_blank"
           rel="noopener noreferrer"
@@ -53,7 +53,7 @@ import { Icon } from "@iconify/vue";
           <li class="hover:scale-110 cursor-pointer">
             <Icon icon="ri:facebook-fill" class="text-green-500 text-2xl transition-transform" />
           </li>
-        </a>
+        </a> -->
 
         <a
           href="https://instagram.com/simplicityhr_outsourcing"
@@ -66,7 +66,7 @@ import { Icon } from "@iconify/vue";
           </li>
         </a>
 
-        <a
+        <!-- <a
           href="https://linkedin.com/simplicityhr"
           target="_blank"
           rel="noopener noreferrer"
@@ -75,7 +75,7 @@ import { Icon } from "@iconify/vue";
           <li class="hover:scale-110 cursor-pointer">
             <Icon icon="ri:linkedin-fill" class="text-green-500 text-2xl transition-transform" />
           </li>
-        </a>
+        </a> -->
       </ul>
     </div>
   </div>

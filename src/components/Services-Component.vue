@@ -1,7 +1,7 @@
 <script setup>
 import { DocumentTextIcon, UserGroupIcon,
   ClipboardDocumentListIcon,
-  GlobeAltIcon} from '@heroicons/vue/24/outline'
+  GlobeAltIcon, CalculatorIcon} from '@heroicons/vue/24/outline'
 const services = [
   {
     icon: DocumentTextIcon,
@@ -47,6 +47,18 @@ const services = [
       "Administrative scheduling support",
     ],
   },
+  {
+    icon: CalculatorIcon,
+    title: "Tax & Financial Compliance",
+    description:
+      "Complete tax and financial compliance services to ensure your business meets all regulatory requirements and maintains accurate financial records.",
+    list: [
+      "SARS eFiling profile setup",
+      "Company and personal income tax returns",
+      "Annual financial statements preparation",
+      "Provisional tax submissions",
+    ],
+  },
 ];
 </script>
 
@@ -61,7 +73,7 @@ const services = [
     <div class="w-fit mx-auto">
       <div class="flex flex-wrap items-center justify-center gap-4 mb-4 mt-10">
         <div
-          class="service-card bg-gray-100 p-6 w-[300px] h-[330px] rounded-md shadow-md relative overflow-hidden transition-all duration-300 hover:shadow-xl cursor-pointer group"
+          class="service-card bg-gray-100 p-6 w-[240px] h-[330px] rounded-md shadow-md relative overflow-hidden transition-all duration-300 hover:shadow-xl cursor-pointer group"
           v-for="item in services"
           :key="item.title"
         >
