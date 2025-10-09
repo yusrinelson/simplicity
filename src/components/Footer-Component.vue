@@ -100,7 +100,7 @@ import { Icon } from "@iconify/vue";
 
   <!-- Copyright Section -->
   <div class="bg-background py-4 px-4">
-    <p class="text-center text-sm text-gray-800">
+    <p class="text-center text-sm font-semibold text-gray-800">
       &copy; 2025 Simplicity. All rights reserved.
     </p>
     <p class="text-center text-xs md:text-sm text-gray-500 mt-1">

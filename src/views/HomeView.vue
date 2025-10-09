@@ -6,6 +6,7 @@ import Services from '../components/Services-Component.vue'
 import Timeline from '../components/Timeline-Component.vue'
 import Fees from '../components/Fees-Component.vue'
 import HROutsourcing from '../components/HROutsourcing-Component.vue'
+import Testimonials from '../components/Testimonials-Component.vue'
 import Contact from '../components/Contact-Component.vue'
 import Footer from '../components/Footer-Component.vue'
 </script>
@@ -19,6 +20,7 @@ import Footer from '../components/Footer-Component.vue'
     <Timeline/>
     <Fees/>
     <HROutsourcing/>
+    <Testimonials/>
     <Contact/>
     <Footer/>
   </main>
