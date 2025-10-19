@@ -1,18 +1,22 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
 
-// https://vite.dev/config/
-export default defineConfig(({ mode }) => ({
-  plugins: [
-    vue(),
-    // Only include Vue DevTools in development mode
-    ...(mode === 'development' ? [vueDevTools()] : [])
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+export default defineConfig(async ({ mode }) => {
+  console.log('Vite mode is:', mode) // For verification
+  const plugins = [vue()]
+
+  if (mode === 'development') {
+    const { default: vueDevTools } = await import('vite-plugin-vue-devtools')
+    plugins.push(vueDevTools())
+  }
+
+  return {
+    plugins,
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url))
+      },
     },
-  },
-}))
+  }
+})
