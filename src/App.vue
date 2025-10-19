@@ -1,6 +1,25 @@
 <script setup>
 // import { RouterLink, RouterView } from 'vue-router'
 import HomeView from './views/HomeView.vue'
+import { useHead } from '@vueuse/head'
+
+useHead({
+  title: 'Simplicity HR Solutions - Professional HR Services',
+  meta: [
+    {
+      name: 'description',
+      content: 'Simplicity HR Solutions provides expert HR consulting, recruitment, and workforce management services across South Africa. Transform your business with our professional HR solutions.'
+    },
+    {
+      name: 'keywords',
+      content: 'HR solutions, human resources, HR consulting, recruitment services, South Africa HR, workforce management, employee relations, Simplicity HR'
+    },
+    {
+      property: 'og:title',
+      content: 'Simplicity HR Solutions - Professional HR Services'
+    }
+  ]
+})
 </script>
 
 <template>
@@ -13,7 +32,7 @@ import HomeView from './views/HomeView.vue'
 </template>
 
 <style scoped>
-header {
+/* header {
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -73,5 +92,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+} */
 </style>
