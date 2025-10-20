@@ -83,7 +83,7 @@ const services = [
               <span class="text-4xl"><Component :is="item.icon" class="w-8 h-8 text-green-500" /></span>
             <h1 class="text-lg md:text-xl font-bold text-secondary text-center">{{ item.title }}</h1>
             </div>
-            <p class="text-sm md:text-[1rem] text-gray-600 leading-relaxed text-center">
+            <p class="text-sm md:text-[0.9rem] text-gray-600 leading-relaxed text-center">
               {{ item.description }}
             </p>
             <p class="text-xs text-center mt-4 text-gray-400 italic">Hover to see details</p>
